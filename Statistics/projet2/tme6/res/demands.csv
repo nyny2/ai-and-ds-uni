@@ -1,0 +1,33 @@
+Crop category,Climate,Marketing,Minimal quantity of shares_Jan,Minimal quantity of shares_Feb,Minimal quantity of shares_Mar,Minimal quantity of shares_Apr,Minimal quantity of shares_May,Minimal quantity of shares_Jun,Minimal quantity of shares_Jul,Minimal quantity of shares_Aug,Minimal quantity of shares_Sep,Minimal quantity of shares_Oct,Minimal quantity of shares_Nov,Minimal quantity of shares_Dec,Minimal number of crops_Jan,Minimal number of crops_Feb,Minimal number of crops_Mar,Minimal number of crops_Apr,Minimal number of crops_May,Minimal number of crops_Jun,Minimal number of crops_Jul,Minimal number of crops_Aug,Minimal number of crops_Sep,Minimal number of crops_Oct,Minimal number of crops_Nov,Minimal number of crops_Dec,Minimal number of crops per trimester_T1,Minimal number of crops per trimester_T2,Minimal number of crops per trimester_T3,Minimal number of crops per trimester_T4
+Carrot,Mild,9M,0,0,0,2,2,2,2,2,2,2,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1
+Carrot,Cool,9M,0,0,0,2,2,2,2,2,2,2,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1
+Condiment crop,Mild,9M,0,0,0,4,4,4,4,4,4,4,4,4,0,0,0,2,2,2,2,2,2,2,1,1,0,3,2,3
+Condiment crop,Cool,9M,0,0,0,4,4,4,4,4,4,4,4,4,0,0,0,2,2,2,2,2,2,2,1,1,0,3,3,3
+Fruit crop,Mild,9M,0,0,0,3,3,8,8,8,8,8,3,3,0,0,0,2,2,4,4,4,4,3,1,1,0,3,5,4
+Fruit crop,Cool,9M,0,0,0,0,2,2,8,8,8,8,3,3,0,0,0,0,1,2,4,4,4,3,1,1,0,3,5,4
+Potato,Mild,9M,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,1,0
+Potato,Cool,9M,0,0,0,0,2,2,2,2,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,1,1,0
+Root crop,Mild,9M,0,0,0,2,4,1,1,1,1,1,4,4,0,0,0,1,2,1,1,1,1,1,2,2,0,3,2,4
+Root crop,Cool,9M,0,0,0,2,4,4,1,1,1,1,4,4,0,0,0,1,2,2,1,1,1,1,2,2,0,3,2,4
+Tomato,Mild,9M,0,0,0,0,0,4,4,4,4,4,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,1,1,1
+Tomato,Cool,9M,0,0,0,0,0,0,4,4,4,4,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,1,1
+Raw greens,Mild,9M,0,0,0,4,4,4,4,4,4,4,4,4,0,0,0,1,1,1,1,1,1,1,1,1,0,2,2,2
+Raw greens,Cool,9M,0,0,0,4,4,4,4,4,4,4,4,4,0,0,0,1,1,1,1,1,1,1,1,1,0,2,2,2
+Cooked greens,Mild,9M,0,0,0,4,4,1,1,1,1,1,4,4,0,0,0,2,2,2,2,2,2,2,2,2,0,4,4,4
+Cooked greens,Cool,9M,0,0,0,4,4,4,1,1,1,1,4,4,0,0,0,2,2,2,2,2,2,2,2,2,0,4,4,4
+Carrot,Mild,12M,2,4,4,2,2,2,2,2,2,2,2,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Carrot,Cool,12M,2,4,4,4,2,2,2,2,2,2,2,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Condiment crop,Mild,12M,2,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3
+Condiment crop,Cool,12M,2,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3
+Fruit crop,Mild,12M,2,2,2,3,3,8,8,8,8,8,3,3,1,1,1,2,2,4,4,4,4,3,1,1,1,3,5,4
+Fruit crop,Cool,12M,2,2,2,2,2,2,8,8,8,8,3,3,1,1,1,1,1,2,4,4,4,3,1,1,1,3,5,4
+Potato,Mild,12M,2,4,4,2,2,2,2,2,2,2,2,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Potato,Cool,12M,2,4,4,4,2,2,2,2,2,2,2,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Root crop,Mild,12M,2,4,4,4,4,1,1,1,1,1,4,4,2,2,2,2,2,1,1,1,1,2,2,2,4,4,2,4
+Root crop,Cool,12M,2,4,4,4,4,4,1,1,1,1,4,4,2,2,2,2,2,2,1,1,1,1,2,2,4,4,2,4
+Tomato,Mild,12M,0,0,0,0,0,4,4,4,4,4,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,1,1,1
+Tomato,Cool,12M,0,0,0,0,0,0,4,4,4,4,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,1,1
+Raw green,Mild,12M,2,4,4,4,4,4,4,4,4,4,4,4,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2
+Raw green,Cool,12M,2,4,4,4,4,4,4,4,4,4,4,4,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2
+Cooked green,Mild,12M,2,4,4,4,4,1,1,1,1,1,4,4,2,2,2,2,2,2,2,2,2,2,2,2,4,4,4,4
+Cooked green,Cool,12M,2,4,4,4,4,4,1,1,1,1,4,4,2,2,2,2,2,2,2,2,2,2,2,2,4,4,4,4

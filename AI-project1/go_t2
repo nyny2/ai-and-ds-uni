@@ -1,0 +1,71 @@
+#!/bin/bash
+
+clear
+
+# --- SETTINGS ---
+display_mode=2         # 2 = Fast mode (no graphics)
+my_team="YuVo"           # Your team name
+config_file="config_fin" # The correct config file
+# ----------------
+
+echo "Starting Tournament for Team: $my_team"
+echo "------------------------------------------------"
+
+# Initialize counters (Wins for Map 0 to 4)
+declare -a my_wins=(0 0 0 0 0)
+declare -a opp_wins=(0 0 0 0 0)
+
+# Loop through all 5 Arenas
+for mapId in {0..4}; do
+    # Loop through both starting positions
+    for initPos in True False; do
+        
+        # Loop 5 times for each setup (Total 10 matches per arena)
+        for round in {1..5}; do
+            
+            # 1. RUN SILENTLY
+            # We use the correct config file: config_TP1
+            output=$(python3 tetracomposibot.py "$config_file" "$mapId" "$initPos" "$display_mode")
+
+            # 2. EXTRACT RESULT
+            # We look for the winner line. Since there are no draws, we just find "wins!"
+            result_line=$(echo "$output" | grep "wins!")
+            
+            # Print status to terminal so you know it's working
+            echo "Arena $mapId [$initPos] (Round $round/5) -> $result_line"
+
+            # 3. UPDATE SCOREBOARD
+            # Check if "Ny" is the one who won
+            if echo "$output" | grep -F -q "=> $my_team wins!"; then
+                ((my_wins[$mapId]++))
+            else
+                ((opp_wins[$mapId]++))
+            fi
+            
+        done
+    done
+done
+
+# --- FINAL SUMMARY TABLE ---
+echo ""
+echo "========================================"
+echo "           TOURNAMENT RESULTS           "
+echo "========================================"
+printf "%-10s | %-10s | %-10s\n" "Arena" "YuVo Wins" "Prof Wins"
+echo "----------------------------------------"
+
+total_wins=0
+total_matches=0
+
+for i in {0..4}; do
+    printf "%-10s | %-10s | %-10s\n" "$i" "${my_wins[$i]}" "${opp_wins[$i]}"
+    
+    total_wins=$((total_wins + my_wins[$i]))
+    # Calculate matches for this arena (MyWins + OppWins)
+    arena_matches=$((my_wins[$i] + opp_wins[$i]))
+    total_matches=$((total_matches + arena_matches))
+done
+
+echo "----------------------------------------"
+echo "Total Wins: $total_wins / $total_matches"
+echo "========================================"

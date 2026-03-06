@@ -1,0 +1,18 @@
+EX1.
+1.
+2.la valeur optimale est 10.5 , les contraintes c1,c2 sont serrées.  
+   les variables en bases sont e3,x1,x2. Et e1,e2 et x3 sont hors bases.
+3.-la valeur optimale change de 10.5 à 11. Et la base n'a pas changé 
+   la contrainte c3 atteint sa borne.
+  -Pour l'augmentation de 1 du terme de droite de la contrainte 1,la base a changé
+   et la valeur optimale n'est ni 10.5 ni 11. On peut en conclure qu'on ne peut pas prévoir 
+   le changement.
+
+Ex2.
+1.la solution optimale est (0,0,60) le bénéfice obtenu est bien 1800 euros.
+2.Non,car le bénéfice du lait cru est 30€ mais pour les autres c'est 20€ et 25€.
+3.au dessus de 30€(par exemple 31€,on gagne 8€ en plus).A partir de 49€,il crée que de fromages.
+4.Non,car on est à maximum pour l'exploitation de 60kl de lait.
+5.au dessus de 30€
+6.Pour 1000€,l'exploitant va gagner 750€ et il lui reste 35kl du lait,en total il va gagner 1450€.
+ Donc le bénéfice l'investissement doit être supérieur ou égal à 350€.

@@ -1,0 +1,42 @@
+Ex1
+Q1,Q2:
+la solution duale associée à la solution optimale est (2 , 0.5, 0).
+
+Q3:
+on n'a pas besoin d'utiliser GLPK pour résoudre le PL dual,car on peut directement résoudre le PL primal. 
+
+Ex2
+
+Q1,Q2:
+(72,108,220)
+
+Q3:
+a)Oui,car le nombre de secondes de la publicité pour le client 2 n'est pas au maximum.Et le client 2 propose le plus d'argent par seconde.
+b)105 secondes supplémentaires permettent un gain maximal.
+
+Q4:
+Oui, on gagne 2700€ plus.
+
+Q5:
+Le coût marginal est de -133.333. On peut en déduire que l'obligation de la règle des 120secondes de musiques minimum nous faire perdre de l'argent.
+
+Q6:
+Ce n'est pas possible de couper client 1 ou 3.
+C'est possible de couper client 2 mais pas rentable.
+
+Ex3
+Q2:
+La solution optimale est (10,15,10,10).
+
+Q3:
+Oui,200 heures supplémentaires maximise le profit. 
+
+Q4:
+Cela est possible,et la surface maximale est 530m².
+
+Q5:
+Non.
+
+Q6:
+Oui,le profit maximal a augmenté 120€ sans avoir le changement du plan d'aménagement. 
+

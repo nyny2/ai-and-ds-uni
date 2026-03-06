@@ -1,0 +1,90 @@
+#!/bin/bash
+
+clear
+
+# --- SETTINGS ---
+map_list="2 4" 
+display_mode=2         # 2 = Fast mode (no graphics)
+my_team="YuVo"         # Your team name
+config_file="config_fin" 
+
+echo "Starting Tournament for Team: $my_team"
+echo "------------------------------------------------"
+
+# Initialize counters for BOTH positions
+# We need separate arrays for True (Right) and False (Left) wins
+declare -a wins_true
+declare -a wins_false
+declare -a losses
+
+# Initialize counters to 0 for the maps we want
+for mapId in $map_list; do
+    wins_true[$mapId]=0
+    wins_false[$mapId]=0
+    losses[$mapId]=0
+done
+
+for mapId in $map_list; do
+    
+    # Loop through both starting positions
+    for initPos in True False; do
+        
+        # Loop 5 times for each setup
+        for round in {1..5}; do
+            
+            # 1. RUN SIMULATION
+            output=$(python3 tetracomposibot.py "$config_file" "$mapId" "$initPos" "$display_mode")
+
+            # 2. EXTRACT RESULT LINE
+            result_line=$(echo "$output" | grep "wins!")
+            
+            echo "Arena $mapId [$initPos] (Round $round/5) -> $result_line"
+
+            # 3. UPDATE SCOREBOARD
+            if echo "$output" | grep -F -q "=> $my_team wins!"; then
+                # If we won, check which side we were on
+                if [ "$initPos" == "True" ]; then
+                    wins_true[$mapId]=$((wins_true[$mapId] + 1))
+                else
+                    wins_false[$mapId]=$((wins_false[$mapId] + 1))
+                fi
+            else
+                # If we lost (doesn't matter which side for this simple counter)
+                losses[$mapId]=$((losses[$mapId] + 1))
+            fi
+            
+        done
+    done
+done
+
+# --- FINAL SUMMARY TABLE ---
+echo ""
+echo "=========================================================="
+echo "                   TOURNAMENT RESULTS                     "
+echo "=========================================================="
+# Table Header: Map | Wins (Right/True) | Wins (Left/False) | Losses
+printf "%-6s | %-12s | %-12s | %-8s\n" "Map" "Wins(True)" "Wins(False)" "Losses"
+echo "----------------------------------------------------------"
+
+total_wins=0
+total_matches=0
+
+for i in $map_list; do
+    w_true=${wins_true[$i]}
+    w_false=${wins_false[$i]}
+    loss=${losses[$i]}
+    
+    # Print the row
+    printf "%-6s | %-12s | %-12s | %-8s\n" "$i" "$w_true" "$w_false" "$loss"
+    
+    # Calculate totals
+    map_wins=$((w_true + w_false))
+    total_wins=$((total_wins + map_wins))
+    
+    map_total=$((map_wins + loss))
+    total_matches=$((total_matches + map_total))
+done
+
+echo "----------------------------------------------------------"
+echo "Total Win Rate: $total_wins / $total_matches"
+echo "=========================================================="
