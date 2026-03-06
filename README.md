@@ -1,19 +1,19 @@
-# ai-and-ds-uni
-Everything I did about AI and Data Science during my informatique Bachelors
-## Project Structure
+#ai-and-ds-uni
 
-```text
+Everything I did about AI and Data Science during my informatique Bachelors
+
+##Folder Structure
+
 ai-and-ds-uni/
 ├── AI-project1/                # Robotics and AI project files
 │   ├── robot_*.py              # Individual robot logic scripts
-│   ├── config_*.py             # Configuration and environment setups
+│   ├── config_*.py             # Environment configurations
 │   └── _instructions_*.md      # Project and TP guidelines
-├── Continuous-Optimisation/    # Course materials and TMEs
-│   └── TME1/ - TME6/           # Weekly practical exercise folders
+├── Continuous-Optimisation/    # Course materials (TME1-TME6)
 ├── Discrete-Math/              # Automata and logic implementation
-│   ├── automate_*.ipynb        # Jupyter notebook implementations
-│   └── *.py                    # Core automata logic (state, transition)
+│   ├── automate_*.ipynb        # Jupyter Notebooks
+│   └── *.py                    # Core automata logic
 ├── Statistics/                 # Probability and stats analysis
-│   └── pr1j - projet3/t2/  # 3ajor statistics prosject
+│   └── projet{1..3}/           # 3 statistics projects
 ├── ARESD.ipynb                 # Analysis notebook
-└── README.md                   # This file
+└── README.md                   # Project documentation
