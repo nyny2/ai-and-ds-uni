@@ -14,7 +14,6 @@ ai-and-ds-uni/
 │   ├── automate_*.ipynb        # Jupyter notebook implementations
 │   └── *.py                    # Core automata logic (state, transition)
 ├── Statistics/                 # Probability and stats analysis
-│   ├── TME1/ - tme10/          # Practical exercises
-│   └── projet2/                # Major statistics project
+│   └── pr1j - projet3/t2/  # 3ajor statistics prosject
 ├── ARESD.ipynb                 # Analysis notebook
 └── README.md                   # This file
