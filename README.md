@@ -3,7 +3,8 @@
 Everything I did about AI and Data Science during my informatique Bachelors
 
 ## Folder Structure
-'''text
+
+```text
 ai-and-ds-uni/
 ├── AI-project1/                # Robotics and AI project files
 │   ├── robot_*.py              # Individual robot logic scripts
