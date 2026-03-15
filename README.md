@@ -17,4 +17,6 @@ ai-and-ds-uni/
 ├── Statistics/                 # Probability and stats analysis
 │   └── projet{1..3}/           # 3 statistics projects
 ├── ARESD.ipynb                 # Analysis notebook
-└── README.md                   # Project documentation
+├── README.md                   # Project documentation
+└── g-debat.zip                 # Debate website uni project zip
+
