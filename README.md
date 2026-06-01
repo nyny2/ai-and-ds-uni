@@ -61,8 +61,8 @@ Three statistics projects covering probability distributions, inference, and app
 
 ---
 
-### Continuous Optimisation
-`Continuous-Optimisation/` · Python · Optimisation
+### Continuous Optimisation — Models and Applications
+`Continuous-Optimisation-Models-and-Applications/` · Python · Optimisation
 
 Six lab sessions (TMEs) on continuous optimisation methods: gradient descent, evolutionary strategies, and constraint handling. Implemented in Python with Answer Set Programming exercises (`.lp` files).
 
